@@ -312,6 +312,9 @@ class SuiteTest(SimpleTestCase, TestFileMixin):
             "./detail[@id='m0_case_short']/action"
         )
 
+    def test_fixtures_in_graph(self):
+        self._test_generic_suite('app_fixture_graphing', 'suite-fixture-graphing')
+
     def test_case_detail_tabs(self):
         self._test_generic_suite("app_case_detail_tabs", 'suite-case-detail-tabs')
 
